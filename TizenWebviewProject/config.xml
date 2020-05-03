@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets" id="http://example.test.com.br" version="1.0.3" viewmodes="maximized">
+    <access origin="*" subdomains="true"></access>
+    <tizen:allow-navigation>https://tvs-testing.netlify.app/?platform=tv-tizen</tizen:allow-navigation>
+    <tizen:app-control>
+        <tizen:src name="https://tvs-testing.netlify.app/?platform=tv-tizen/eden/index.html" reload="disable"/>
+        <tizen:operation name="http://samsung.com/appcontrol/operation/eden_resume"/>
+    </tizen:app-control>
+    <tizen:application id="z1MNYaVwYO.example" package="z1MNYaVwYO" required_version="2.3"/>
+    <author href="https://www.example.com" email="smarttv@example.com">Rádio e Televisão Record S/A</author>
+    <tizen:content-security-policy>script-src 'self'</tizen:content-security-policy>
+    <tizen:content-security-policy-report-only>*</tizen:content-security-policy-report-only>
+    <feature name="http://tizen.org/feature/screen.size.all"/>
+    <feature name="http://tizen.org/feature/network.wifi"/>
+    <icon src="icon.png" height="411" width="411"/>
+    <tizen:metadata key="http://samsung.com/tv/metadata/multitasking.support" value="true"/>
+    <tizen:metadata key="http://samsung.com/tv/metadata/use.accelerator" value="endpoint_URL=https://samsungexample.ottvs.com.br/edensource/getpreview"/>
+    <tizen:metadata key="http://samsung.com/tv/metadata/devel.api.version" value="2.4"/>
+    <name>example</name>
+    <tizen:privilege name="http://developer.samsung.com/privilege/drminfo"/>
+    <tizen:privilege name="http://tizen.org/privilege/tv.inputdevice"/>
+    <tizen:privilege name="http://tizen.org/privilege/datacontrol.consumer"/>
+    <tizen:privilege name="http://developer.samsung.com/privilege/drmplay"/>
+    <tizen:privilege name="http://developer.samsung.com/privilege/productinfo"/>
+    <tizen:privilege name="http://developer.samsung.com/privilege/hostedapp_deviceapi_allow"/>
+    <tizen:privilege name="http://tizen.org/privilege/tv.display"/>
+    <tizen:privilege name="http://developer.samsung.com/privilege/network.partner"/>
+    <tizen:privilege name="http://developer.samsung.com/privilege/network.public"/>
+    <tizen:privilege name="http://tizen.org/privilege/internet"/>
+    <tizen:profile name="tv"/>
+    <tizen:setting screen-orientation="landscape" context-menu="disable" background-support="disable" encryption="disable" install-location="auto" hwkey-event="disable"/>
+    <tizen:content src="https://tvs-testing.netlify.app/?platform=tv-tizen"/>
+</widget>
